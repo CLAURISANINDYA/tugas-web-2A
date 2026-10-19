@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Kasir Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Aplikasi Kasir</h2>
+        
+        <!-- Form Input -->
+        <form id="kasirForm">
+            <div class="form-group">
+                <label for="namaBarang">Nama Barang</label>
+                <input type="text" id="namaBarang" placeholder="Contoh: Sepatu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hargaBarang">Harga Barang (Rp)</label>
+                <input type="number" id="hargaBarang" placeholder="Contoh: 30000" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="qty">Jumlah Beli (Qty)</label>
+                <input type="number" id="qty" placeholder="Contoh: 3" min="1" required>
+            </div>
+
+            <button type="submit">Proses / OK</button>
+        </form>
+
+        <!-- Tampilan Struk Belanja -->
+        <div id="strukBelanja" class="struk-container">
+            <div class="struk-title">+++ STRUK BELANJA +++</div>
+            <div class="struk-line"></div>
+            
+            <div class="struk-row bold">
+                <span>Nama</span>
+                <span>Harga</span>
+                <span>Qty</span>
+                <span>Total</span>
+            </div>
+            
+            <div class="struk-row">
+                <span id="strukNama">-</span>
+                <span id="strukHarga">0</span>
+                <span id="strukQty">0</span>
+                <span id="strukSubtotal">0</span>
+            </div>
+
+            <div class="struk-line"></div>
+
+            <div class="struk-row">
+                <span>Subtotal:</span>
+                <span id="subtotalVal">Rp 0</span>
+            </div>
+
+            <div class="struk-row diskon-text">
+                <span>Diskon (10%):</span>
+                <span id="diskonVal">Rp 0</span>
+            </div>
+
+            <div class="struk-line"></div>
+
+            <div class="struk-row bold total-text">
+                <span>TOTAL BAYAR:</span>
+                <span id="totalBayarVal">Rp 0</span>
+            </div>
+
+            <div class="struk-line"></div>
+            <div class="struk-footer">
+                --- Terima Kasih ---
+            </div>
+        </div>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

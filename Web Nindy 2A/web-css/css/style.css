@@ -1,0 +1,27 @@
+/* membuat body berwarna abu abu dan font arial, sans seris ukuran 16px */
+body {
+    background-color: gray;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+/* membuat canvas putih ditengah */
+.container {
+    background-color: white;
+    margin: 0 auto;
+    width: 800px;
+}
+
+/* mengatur jarak dalam header */
+.header {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* mengatur judul */
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

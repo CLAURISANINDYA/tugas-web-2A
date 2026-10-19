@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Styling Struk Belanja */
+.struk-container {
+    margin-top: 25px;
+    background-color: #fff8dc;
+    border: 2px dashed #444;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    display: none; /* Sembunyikan sebelum tombol diproses */
+}
+
+.struk-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.struk-line {
+    border-bottom: 1px dashed #444;
+    margin: 10px 0;
+}
+
+.struk-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.struk-row.bold {
+    font-weight: bold;
+}
+
+.diskon-text {
+    color: #c00;
+}
+
+.total-text {
+    font-size: 16px;
+}
+
+.struk-footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
