@@ -1,0 +1,701 @@
+
+/* ===================================
+   CLAURISA NINDYA
+   DARK EDITORIAL PHOTOGRAPHY PORTFOLIO
+=================================== */
+
+:root {
+    --black: #151515;
+    --dark: #20201e;
+    --white: #f7f6f2;
+    --paper: #eeede7;
+    --orange: #dca66b;
+    --gray: #aaa9a2;
+    --line: #d8d6ce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--paper);
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.section-container {
+    width: min(1180px, 88%);
+    margin-inline: auto;
+}
+
+.section-title,
+.home h1,
+.contact-text h2 {
+    font-family: "Playfair Display", serif;
+}
+
+.section-label {
+    color: var(--orange);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    min-height: 82px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: var(--black);
+    color: var(--white);
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: var(--orange);
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.navbar nav a {
+    font-size: 13px;
+    color: #d2d0c9;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--orange);
+}
+
+/* ===== HOME ===== */
+
+.home {
+    width: 100%;
+    min-height: 690px;
+    padding: 90px 8% 110px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    background: var(--black);
+    color: var(--white);
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle {
+    color: var(--orange);
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.home h1 {
+    max-width: 650px;
+    font-size: clamp(48px, 6.3vw, 84px);
+    line-height: 1.12;
+    font-weight: 600;
+    letter-spacing: -3px;
+    overflow-wrap: anywhere;
+}
+
+.home h2 {
+    color: var(--orange);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.description {
+    max-width: 440px;
+    color: #b9b7b0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.home-actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    padding: 13px 22px;
+    background: var(--orange);
+    color: var(--black);
+    border: 1px solid var(--orange);
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--orange);
+}
+
+.button span {
+    font-size: 18px;
+}
+
+.mail-icon {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #64635e;
+    color: var(--orange);
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.mail-icon:hover {
+    background: var(--orange);
+    color: var(--black);
+}
+
+.home-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    justify-self: end;
+    padding: 0 16px 16px 0;
+}
+
+.home-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(20%);
+}
+
+.image-frame {
+    position: absolute;
+    inset: 18px 0 0 18px;
+    border: 1px solid var(--orange);
+    z-index: 1;
+}
+
+.pink-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -25px;
+    top: -35px;
+    background: var(--orange);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.hero-label {
+    position: absolute;
+    left: 8%;
+    bottom: 28px;
+    color: #77766f;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+/* ===== ABOUT ===== */
+
+.about {
+    padding: 110px 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-heading .section-title {
+    text-align: left;
+    font-size: clamp(42px, 5vw, 58px);
+    line-height: 1.2;
+}
+
+.about-heading .section-label {
+    color: #977044;
+}
+
+.about-description {
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+}
+
+.about-content > .about-description p {
+    max-width: 650px;
+    color: #5d5b54;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* ===== PORTFOLIO ===== */
+
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.portfolio-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.portfolio-heading .section-title {
+    text-align: left;
+    font-size: clamp(42px, 5vw, 60px);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.portfolio-heading .section-label {
+    color: #977044;
+}
+
+.section-subtitle {
+    max-width: 290px;
+    color: #77756e;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 28px;
+}
+
+.portfolio-card {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    transition: transform 0.35s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    background: #dedbd2;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    filter: saturate(0.8);
+    transition: transform 0.6s, filter 0.6s;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.04);
+    filter: saturate(1);
+}
+
+.image-number {
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    text-shadow: 0 2px 8px #0008;
+}
+
+.portfolio-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    min-height: 30px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.portfolio-info h3 {
+    color: var(--black);
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.portfolio-info p {
+    color: #77756e;
+    font-size: 12px;
+}
+
+/* ===== CONTACT ===== */
+
+.contact {
+    padding: 100px 0;
+    background: var(--dark);
+    color: var(--white);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: start;
+    gap: 85px;
+}
+
+.contact-text {
+    padding-top: 30px;
+}
+
+.contact-text h2 {
+    font-size: clamp(48px, 6vw, 70px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.contact-text > p:not(.section-label) {
+    color: #b9b7b0;
+    font-size: 17px;
+}
+
+.heart-icon {
+    display: grid;
+    place-items: center;
+    width: 65px;
+    height: 65px;
+    margin-top: 35px;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-size: 27px;
+    transform: rotate(-5deg);
+}
+
+.contact-form {
+    padding: 38px;
+    background: #292925;
+    border: 1px solid #41413a;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contact-form > label {
+    display: block;
+    color: #e7e4dc;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.contact-form > input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 25px;
+    background: #20201e;
+    color: white;
+    border: 1px solid #48483f;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form > input::placeholder {
+    color: #99978e;
+}
+
+.contact-form > input:focus,
+.contact-form textarea:focus {
+    border-color: var(--orange);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 125px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.form-buttons button {
+    padding: 12px 24px;
+    background: var(--orange);
+    color: var(--black);
+    border: 1px solid var(--orange);
+    border-radius: 0;
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-buttons button:hover {
+    background: transparent;
+    color: var(--orange);
+}
+
+.form-buttons .reset-button {
+    background: transparent;
+    color: #d4d1c8;
+    border-color: #66655d;
+}
+
+.form-buttons .reset-button:hover {
+    background: #393932;
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 25px 6%;
+    background: var(--black);
+    color: #88877f;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #30302c;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 850px) {
+    .home {
+        gap: 35px;
+        padding-inline: 6%;
+    }
+
+    .home h1 {
+        font-size: 55px;
+    }
+
+    .home-image img {
+        height: 390px;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .contact-container {
+        gap: 35px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .portfolio-card img {
+        height: 280px;
+    }
+
+    .portfolio-info {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+    }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 600px) {
+    .section-container {
+        width: 90%;
+    }
+
+    .navbar {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        padding: 65px 5% 85px;
+        gap: 45px;
+    }
+
+    .home h1 {
+        font-size: clamp(43px, 11vw, 60px);
+        letter-spacing: -2px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .home-image {
+        width: 85%;
+        justify-self: center;
+    }
+
+    .home-image img {
+        height: 390px;
+    }
+
+    .pink-circle {
+        width: 65px;
+        height: 65px;
+        right: -15px;
+    }
+
+    .hero-label {
+        left: 5%;
+        bottom: 22px;
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .about {
+        padding: 65px 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-heading .section-title {
+        font-size: 43px;
+    }
+
+    .about-content > .about-description p {
+        font-size: 15px;
+    }
+
+    .portfolio {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+
+    .portfolio-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .portfolio-heading .section-title {
+        font-size: 43px;
+    }
+
+    .section-subtitle {
+        text-align: left;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .portfolio-card img {
+        height: 260px;
+    }
+
+    .portfolio-info {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .portfolio-info h3:empty,
+    .portfolio-info p:empty {
+        display: none;
+    }
+
+    .contact {
+        padding: 65px 0;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-text {
+        padding-top: 0;
+    }
+
+    .contact-text h2 {
+        font-size: 48px;
+    }
+
+    .contact-form {
+        padding: 25px 18px;
+    }
+
+    .form-buttons button {
+        padding: 11px 18px;
+    }
+}
