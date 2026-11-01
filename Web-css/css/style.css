@@ -1,0 +1,98 @@
+/* membuat body berwarna abu - abu dan font arial,sans-serif */
+    /* membuat body berwarna abu - abu dan font arial,sans-serif */
+body {
+    background-color: gray;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* membuat canvas putih ditengah */
+.container {
+    background-color: white;
+    margin: 0 auto;
+    width: 800px;
+}
+
+/* mengatur jarak dalam header */
+.header {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* mengatur judul */
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* untuk navigasi atau menu atas */
+.nav {
+    padding: 0px;
+}
+
+.nav li {
+    /* membuat list navigasi menjadi horizontal dan mengatur jarak antar menu */
+    display: inline-block;
+    margin-right: 10px; 
+    margin-bottom: 20px;
+}
+
+/* mengatur link navigasi */
+.nav li a {
+    /* untuk menghilangkan garis bawah pada link navigasi dan mengatur warna link navigasi */
+    text-decoration: none;
+    color: rgb(34, 56, 181);
+}
+
+/* membuat animasi saat link di sorot */
+.nav li a:hover {
+    background-color: pink;
+    color: white;
+}
+/*untuk css banner*/
+.banner {
+    height: 300px;
+    background-image: url('img/foto.jpeg'); /* Ganti dengan nama file gambar di folder img kamu */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*untuk isi*/
+.isi {
+    padding: 20px;
+}
+ 
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+ 
+.isi .penulis {
+    font-size: 14px;
+    /*agar agak naik*/
+    margin-top: -10px;
+}
+ 
+.isi .penulis a {
+    text-decoration: none;
+    color: rgb(34, 56, 181);
+}
+
+.isi p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/*untuk footer*/
+.footer {
+    background-color: navy;
+    height: 50px;
+    padding: 2px;
+}
+ 
+.footer .copyright {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
